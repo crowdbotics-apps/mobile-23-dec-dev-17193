@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 import {
   View,
   Image,
@@ -10,32 +10,49 @@ import {
   TextInput,
   StyleSheet,
   ScrollView
-} from "react-native";
-import DateTimePicker from 'react-native-datepicker';
-import Icon from 'react-native-vector-icons/FontAwesome';
-import Slider from '@react-native-community/slider';
-import { CheckBox } from 'react-native-elements';
-import {SlideMenuIcon} from '../../../navigator/slideMenuIcon';
+} from "react-native"
+import DateTimePicker from "react-native-datepicker"
+import Icon from "react-native-vector-icons/FontAwesome"
+import Slider from "@react-native-community/slider"
+import { CheckBox } from "react-native-elements"
+import { SlideMenuIcon } from "../../../navigator/slideMenuIcon"
 
 export default class Blank extends React.Component {
-  static navigationOptions = ({navigation}) => {
+  static navigationOptions = ({ navigation }) => {
     return {
-      headerLeft: <SlideMenuIcon navigationProps={navigation} />,
-    };
-  };
-  
-  state = {};
+      headerLeft: <SlideMenuIcon navigationProps={navigation} />
+    }
+  }
+
+  state = {
+    TextInput_3:
+      "htfhgf hgfghf hgfhgf jhgjhgjh jhgjhgj jhgjhg jhgjhgjh jhjgjh jhgjhgjh jhgjhgjfh jhghjg jhgjhgjh jhgjhg",
+    TextInput_4: ""
+  }
 
   render = () => (
-    <View style={styles.container}>
-      <Text>This is your new component</Text>
+    <View>
+      <Text>Sample text content</Text>
+      <TextInput
+        placeholder="Sample text input placeholder"
+        multiline={true}
+        style={styles.TextInput_3}
+        value={this.state.TextInput_3}
+        onChangeText={nextValue => this.setState({ TextInput_3: nextValue })}
+      />
+      <TextInput
+        placeholder="Number Input Placeholder"
+        keyboardType="numeric"
+        value={this.state.TextInput_4}
+        onChangeText={nextValue => this.setState({ TextInput_4: nextValue })}
+      />
     </View>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    marginHorizontal: 16,
-  },
-});
+  View_1: {},
+  Text_2: {},
+  TextInput_3: { height: 100 },
+  TextInput_4: {}
+})
