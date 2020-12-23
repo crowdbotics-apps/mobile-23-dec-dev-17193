@@ -26,7 +26,8 @@ export default class Blank extends React.Component {
 
   state = {
     TextInput_3:
-      " jhgjhgjhg jhgjhghj jhgfhjghjg jhgfjhgjhg jhgfjhghjg jhghjghjg jhgjhghjg jhgfhjgjhg jhgjhghfhgfghf hgfhgf jhgjhgjh jhgjhgj jhgjhg jhgjhgjh jhjgjh jhgjhgjh jhgjhgjfh jhghjg jhgjhgjh jhgjhg"
+      " jhgjhgjhg jhgjhghj jhgfhjghjg jhgfjhgjhg jhgfjhghjg jhghjghjg jhgjhghjg jhgfhjgjhg jhgjhghfhgfghf hgfhgf jhgjhgjh jhgjhgj jhgjhg jhgjhgjh jhjgjh jhgjhgjh jhgjhgjfh jhghjg jhgjhgjh jhgjhg",
+    TextInput_4: ""
   }
 
   render = () => (
@@ -39,6 +40,12 @@ export default class Blank extends React.Component {
         value={this.state.TextInput_3}
         onChangeText={nextValue => this.setState({ TextInput_3: nextValue })}
       />
+      <TextInput
+        placeholder="Number Input Placeholder"
+        keyboardType="numeric"
+        value={this.state.TextInput_4}
+        onChangeText={nextValue => this.setState({ TextInput_4: nextValue })}
+      />
     </View>
   )
 }
@@ -46,5 +53,6 @@ export default class Blank extends React.Component {
 const styles = StyleSheet.create({
   View_1: {},
   Text_2: {},
-  TextInput_3: { height: 100 }
+  TextInput_3: { height: 100 },
+  TextInput_4: {}
 })
