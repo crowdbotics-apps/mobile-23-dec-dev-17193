@@ -24,7 +24,10 @@ export default class Blank extends React.Component {
     }
   }
 
-  state = { TextInput_3: "" }
+  state = {
+    TextInput_3:
+      "htfhgf hgfghf hgfhgf jhgjhgjh jhgjhgj jhgjhg jhgjhgjh jhjgjh jhgjhgjh jhgjhgjfh jhghjg jhgjhgjh jhgjhg"
+  }
 
   render = () => (
     <View>
