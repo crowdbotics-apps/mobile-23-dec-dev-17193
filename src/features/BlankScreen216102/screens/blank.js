@@ -26,7 +26,7 @@ export default class Blank extends React.Component {
 
   state = {
     TextInput_3:
-      " jhgjhgjhg jhgjhghj jhgfhjghjg jhgfjhgjhg jhgfjhghjg jhghjghjg jhgjhghjg jhgfhjgjhg jhgjhghfhgfghf hgfhgf jhgjhgjh jhgjhgj jhgjhg jhgjhgjh jhjgjh jhgjhgjh jhgjhgjfh jhghjg jhgjhgjh jhgjhg",
+      " jhgjhgjh jhgjhgj jhgjhgfhjg jhgjhghjg jhghjgjhg jhgjhgfhjg jhgjhgjhg jhgjfhghjg jhgjfhgjhg jhgfjhgfhjgb jhgjhg jhgjhghg jhgjhghfj jhgjhghj jhgjhghjg jhgjhgjhg jhgjhgfj jhgjhgjhgghgjhgjhg jhgjhghj jhgfhjghjg jhgfjhgjhg jhgfjhghjg jhghjghjg jhgjhghjg jhgfhjgjhg jhgjhghfhgfghf hgfhgf jhgjhgjh jhgjhgj jhgjhg jhgjhgjh jhjgjh jhgjhgjh jhgjhgjfh jhghjg jhgjhgjh jhgjhg",
     TextInput_4: ""
   }
 
@@ -53,6 +53,19 @@ export default class Blank extends React.Component {
 const styles = StyleSheet.create({
   View_1: {},
   Text_2: {},
-  TextInput_3: { height: 100 },
+  TextInput_3: {
+    height: 100,
+    color: "#8d65ec",
+    backgroundColor: "#cef2a1",
+    fontFamily: "Merriweather-Regular",
+    borderWidth: 3,
+    borderLeftWidth: 3,
+    borderRightWidth: 3,
+    borderTopWidth: 3,
+    borderBottomWidth: 3,
+    textAlign: "center",
+    textTransform: "uppercase",
+    letterSpacing: 1
+  },
   TextInput_4: {}
 })
