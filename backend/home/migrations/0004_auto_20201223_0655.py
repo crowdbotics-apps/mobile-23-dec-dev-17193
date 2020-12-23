@@ -9,17 +9,23 @@ class Migration(migrations.Migration):
 
     dependencies = [
         migrations.swappable_dependency(settings.AUTH_USER_MODEL),
-        ('home', '0003_auto_20201223_0653'),
+        ("home", "0003_auto_20201223_0653"),
     ]
 
     operations = [
         migrations.RemoveField(
-            model_name='customtext',
-            name='ghfghfgh',
+            model_name="customtext",
+            name="ghfghfgh",
         ),
         migrations.AddField(
-            model_name='customtext',
-            name='hjghg',
-            field=models.OneToOneField(blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, related_name='customtext_hjghg', to=settings.AUTH_USER_MODEL),
+            model_name="customtext",
+            name="hjghg",
+            field=models.OneToOneField(
+                blank=True,
+                null=True,
+                on_delete=django.db.models.deletion.SET_NULL,
+                related_name="customtext_hjghg",
+                to=settings.AUTH_USER_MODEL,
+            ),
         ),
     ]
